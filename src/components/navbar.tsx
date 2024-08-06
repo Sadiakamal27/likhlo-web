@@ -18,7 +18,7 @@ export default function () {
   return (
     <Card className="p-2 my-2">
       {" "}
-      <main className="">
+      <div className="">
         <div className="flex w-full justify-between items-center">
           <div className="flex items-center gap-3">
             <Button size="icon" variant="secondary">
@@ -46,7 +46,7 @@ export default function () {
             </Button>
           </div>
         </div>
-      </main>
+      </div>
     </Card>
   );
 }
