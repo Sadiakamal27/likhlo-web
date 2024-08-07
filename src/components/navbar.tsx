@@ -10,6 +10,7 @@ import {
   FiMoon,
   FiMoreVertical,
   FiShoppingBag,
+  FiBook,
 } from "react-icons/fi";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -24,7 +25,7 @@ export default function () {
             <FiShoppingBag className="h-4 w-4" />
           </Button>
           <Button size="icon" variant="outline">
-            <FiShoppingCart className="h-4 w-4" />
+            <FiBook className="h-4 w-4" />
           </Button>
         </div>
         <div className="justify-self-center ">
