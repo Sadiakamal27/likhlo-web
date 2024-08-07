@@ -1,10 +1,8 @@
 "use client";
 
 import logo from "@/assets/likhlo-logo.svg";
-import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import {
-  FiShoppingCart,
   FiEdit3,
   FiSun,
   FiMoon,
@@ -15,7 +13,7 @@ import {
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
-export default function () {
+export default function (): any {
   const { setTheme, theme } = useTheme();
   return (
     <div className="border-b border-input p-2 ">
