@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
-export default function (): any {
+export default function Navbar(): any {
   const { setTheme, theme } = useTheme();
   return (
     <div className="border-b border-input p-2 ">
