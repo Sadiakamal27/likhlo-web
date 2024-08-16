@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirect() {
+  async redirects() {
     return [
       {
         source: "/",
         destination: "/store",
-        permanent: "true",
+        permanent: true,
       },
     ];
   },
