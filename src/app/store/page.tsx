@@ -10,12 +10,6 @@ export default function Store() {
       <BookCard />
       <BookCard />
       <BookCard />
-      <BookCard />
-      <BookCard />
-      <BookCard />
-      <BookCard />
-      <BookCard />
-      <BookCard />{" "}
     </div>
   );
 }
