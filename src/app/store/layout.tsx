@@ -6,10 +6,5 @@ export default function HomeLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      <Navbar />
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
