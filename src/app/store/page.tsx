@@ -1,5 +1,5 @@
 import BookCard from "@/components/book-card";
-import { FiFilter, FiGrid, FiSearch, FiShoppingBag } from "react-icons/fi";
+import { FiFilter, FiGrid, FiSearch } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 
 export default function Store() {

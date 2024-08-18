@@ -23,8 +23,8 @@ export default function BookMeta() {
   return (
     <>
       <div className="left-block flex ">
-        <div className="h-75 w-90 cover bg-muted/40 rounded-lg overflow-hidden">
-          <img src={bookCover} alt="Book Cover Here" />
+        <div className="h-[27rem] w-72 cover bg-muted/40 rounded-lg overflow-hidden">
+          <img className="cover w-full" src={bookCover} alt="Book Cover Here" />
         </div>
         {!isCoverSet && (
           <form onSubmit={addCoverHandler}>
