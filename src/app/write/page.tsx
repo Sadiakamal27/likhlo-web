@@ -1,12 +1,12 @@
 import BookMeta from "./book-meta";
 import ContentEditor from "./content-editor";
 
-export default function () {
+export default function Write() {
   return (
     <>
       <div className="container grid grid-cols-3 gap-8  ">
-        <BookMeta className="bg-slate-400" />
-        <ContentEditor className="bg-green-500 col-span-2" />
+        <BookMeta className="" />
+        <ContentEditor className="col-span-2" />
       </div>
     </>
   );
