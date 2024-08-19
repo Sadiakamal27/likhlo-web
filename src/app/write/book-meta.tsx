@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import React, { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
-export default function BookMeta() {
+export default function BookMeta({ className }: { className?: string }) {
   const [isCoverSet, setIsCoverSet] = useState<boolean>(false);
 
   const [bookCover, setBookCover] = useState<string | undefined>("");
@@ -22,7 +22,7 @@ export default function BookMeta() {
 
   return (
     <>
-      <div className="left-block flex ">
+      <div className={`left-block flex  ${className}`}>
         <div className="h-[27rem] w-72 cover bg-muted/40 rounded-lg overflow-hidden">
           <img className="cover w-full" src={bookCover} alt="Book Cover Here" />
         </div>
