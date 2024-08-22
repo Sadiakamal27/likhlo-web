@@ -17,7 +17,7 @@ import Link from "next/link";
 export default function Navbar(): any {
   const { setTheme, theme } = useTheme();
   return (
-    <div className="w-full border-b border-input p-2 ">
+    <div className="w-full border-b border-input p-2 sticky top-0 bg-background/40 backdrop-blur-lg z-40 ">
       <div className="grid grid-cols-3">
         <div className="flex items-center gap-3">
           <Button size="icon" variant="outline">
