@@ -12,6 +12,7 @@ import {
 } from "react-icons/fi";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function Navbar(): any {
   const { setTheme, theme } = useTheme();
@@ -30,9 +31,11 @@ export default function Navbar(): any {
           <Image src={logo} alt="logo" className="w-20 invert dark:invert-0" />
         </div>
         <div className="flex items-center gap-3  justify-self-end">
-          <Button size="icon" variant="default">
-            <FiEdit3 className="h-4 w-4" />
-          </Button>
+          <Link href="/write">
+            <Button size="icon" variant="default">
+              <FiEdit3 className="h-4 w-4" />
+            </Button>
+          </Link>
           <Button
             onClick={() =>
               theme == "dark" ? setTheme("light") : setTheme("dark")
