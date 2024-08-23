@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import React from "react";
 import { ContentItem } from "./content-item";
 import { FiArrowUpRight, FiPlus } from "react-icons/fi";
 
