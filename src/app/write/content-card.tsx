@@ -8,7 +8,7 @@ export default function ContentCard() {
   return (
     <Card className="flex mt-4 flex-col gap-2 w-full rounded-2xl p-2">
       <div className="flex gap-2 justify-end">
-        <ContentItem className="w-full flex justify-between">
+        <ContentItem>
           <p>Chapter 1</p>
           <FiArrowUpRight className="w-4 h-4" />
         </ContentItem>
@@ -17,11 +17,16 @@ export default function ContentCard() {
         </Button>
       </div>
       <div className="flex gap-2 justify-end">
-        <ContentItem
-          className="w-11/12  flex  justify-between"
-          variant="ghost"
-          size="topic"
-        >
+        <ContentItem variant="ghost" size="topic">
+          <p>Topic 1</p>
+          <FiArrowUpRight className="w-4 h-4" />
+        </ContentItem>
+        <Button variant="ghost" size="icon">
+          <FiPlus className="h-4 w-4" />
+        </Button>
+      </div>{" "}
+      <div className="flex gap-2 justify-end">
+        <ContentItem variant="ghost" size="subtopic">
           <p>Topic 1</p>
           <FiArrowUpRight className="w-4 h-4" />
         </ContentItem>
