@@ -17,16 +17,16 @@ import Link from "next/link";
 export default function Navbar(): any {
   const { setTheme, theme } = useTheme();
   return (
-    <div className="w-full border-b border-input p-2 sticky top-0 bg-background/40 backdrop-blur-lg z-40 ">
+    <div className="border-b border-input p-2 sticky top-0 bg-background/40 backdrop-blur-lg z-40 ">
       <div className="grid grid-cols-3">
         <div className="flex items-center gap-3">
           <Link href="/store">
             {" "}
-            <Button size="icon" variant="outline">
+            <Button size="icon" variant="muted">
               <FiShoppingBag className="h-4 w-4" />
             </Button>
           </Link>
-          <Button size="icon" variant="outline">
+          <Button size="icon" variant="muted">
             <FiBook className="h-4 w-4" />
           </Button>
         </div>
@@ -43,7 +43,7 @@ export default function Navbar(): any {
             onClick={() =>
               theme == "dark" ? setTheme("light") : setTheme("dark")
             }
-            variant="outline"
+            variant="muted"
             size="icon"
           >
             <FiSun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

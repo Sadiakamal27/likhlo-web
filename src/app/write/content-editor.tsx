@@ -8,6 +8,12 @@ export default function ContentEditor({ className }: { className?: string }) {
       <ContentCard />
       <ContentCard />
       <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
+      <ContentCard />
     </div>
   );
 }

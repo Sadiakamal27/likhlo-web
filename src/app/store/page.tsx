@@ -1,6 +1,7 @@
 import BookCard from "@/components/book-card";
 import { FiFilter, FiGrid, FiSearch } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import Dock from "../write/dock";
 
 export default function Store() {
   return (
@@ -22,11 +23,22 @@ export default function Store() {
           Top Sellers
           <div className="flex  gap-4 justify-between">
             <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
           </div>
         </div>
         <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
           Top Sellers
           <div className="flex  gap-4 justify-between">
+            <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
+            <BookCard />
             <BookCard />
           </div>
         </div>
@@ -37,6 +49,7 @@ export default function Store() {
           </div>
         </div>
       </section>
+      <Dock />
     </main>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import React, { FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
 export default function BookMeta({ className }: { className?: string }) {
@@ -31,10 +31,10 @@ export default function BookMeta({ className }: { className?: string }) {
             <Button
               type="submit"
               variant="secondary"
-              className="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%]"
+              className="absolute top-2/4 group left-2/4 translate-x-[-50%] translate-y-[-50%]"
             >
               <FiPlus className="h-4 w-4" />
-              Add Cover
+              Add Cover{" "}
             </Button>
           </form>
         )}

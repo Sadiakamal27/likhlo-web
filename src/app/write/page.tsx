@@ -1,5 +1,6 @@
 import BookMeta from "./book-meta";
 import ContentEditor from "./content-editor";
+import Dock from "./dock";
 
 export default function Write() {
   return (
