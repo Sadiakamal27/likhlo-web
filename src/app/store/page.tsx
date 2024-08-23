@@ -16,15 +16,11 @@ export default function Store() {
           <FiGrid className="h-4 w-4" />
         </Button>
       </div>
-
       <section className="pl-20">
+        {" "}
         <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
           Top Sellers
           <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
             <BookCard />
           </div>
         </div>
@@ -32,19 +28,11 @@ export default function Store() {
           Top Sellers
           <div className="flex  gap-4 justify-between">
             <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
           </div>
         </div>
         <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
           Top Sellers
           <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
             <BookCard />
           </div>
         </div>
