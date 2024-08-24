@@ -19,16 +19,7 @@ export default function Store() {
       </div>
       <section className="pl-20">
         {" "}
-        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
-          Top Sellers
-          <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
-          </div>
-        </div>
-        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
+        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg overflow-hidden">
           Top Sellers
           <div className="flex  gap-4 justify-between">
             <BookCard />
@@ -39,12 +30,6 @@ export default function Store() {
             <BookCard />
             <BookCard />
             <BookCard />
-            <BookCard />
-          </div>
-        </div>
-        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg">
-          Top Sellers
-          <div className="flex  gap-4 justify-between">
             <BookCard />
           </div>
         </div>
