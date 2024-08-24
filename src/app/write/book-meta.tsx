@@ -22,17 +22,14 @@ export default function BookMeta({ className }: { className?: string }) {
 
   return (
     <div className={`left-block  flex  ${className}`}>
-      <div className="relative">
-        <div className="h-[27rem] w-72 cover bg-muted/40 rounded-lg overflow-hidden">
-          <img className="cover w-full" src={bookCover} alt="Book Cover Here" />
-        </div>
+      <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
+        <img className=" w-full" src={bookCover} alt="Book Cover Here" />
         {!isCoverSet && (
-          <form onSubmit={addCoverHandler}>
-            <Button
-              type="submit"
-              variant="secondary"
-              className="absolute top-2/4 group left-2/4 translate-x-[-50%] translate-y-[-50%]"
-            >
+          <form
+            onSubmit={addCoverHandler}
+            className="absolute  top-2/4 group left-2/4 translate-x-[-50%] translate-y-[-50%]"
+          >
+            <Button type="submit" variant="secondary">
               <FiPlus className="h-4 w-4" />
               Add Cover{" "}
             </Button>
