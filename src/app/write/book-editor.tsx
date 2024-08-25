@@ -3,7 +3,7 @@ import ContentCard from "./content-card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export default function ContentEditor({ className }: { className?: string }) {
+export default function BookEditor({ className }: { className?: string }) {
   return (
     <div className={className}>
       <div className="text-foreground  flex flex-col gap-4 ">
