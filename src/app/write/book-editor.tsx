@@ -10,7 +10,7 @@ export default function BookEditor({ className }: { className?: string }) {
         <h2 className="p-0 text-xl font-bold ">Description</h2>
 
         <textarea
-          className="bg-background max-h-32 placeholder:text-foreground/30 w-full h-auto outline-none "
+          className="bg-transparent max-h-32 placeholder:text-foreground/30 w-full h-auto outline-none "
           placeholder="Enter book description here..."
         />
       </div>
