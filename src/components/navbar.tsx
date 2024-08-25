@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import CustomTooltip from "./ui/custom-tooltip";
 
 export default function Navbar(): any {
   const { setTheme, theme } = useTheme();
@@ -22,33 +23,41 @@ export default function Navbar(): any {
         <div className="flex items-center gap-3">
           <Link href="/store">
             {" "}
-            <Button size="icon" variant="muted">
-              <FiShoppingBag className="h-4 w-4" />
-            </Button>
+            <CustomTooltip label="Store">
+              <Button size="icon" variant="muted">
+                <FiShoppingBag className="h-4 w-4" />
+              </Button>
+            </CustomTooltip>
           </Link>
-          <Button size="icon" variant="muted">
-            <FiBook className="h-4 w-4" />
-          </Button>
+          <CustomTooltip label="Library">
+            <Button size="icon" variant="muted">
+              <FiBook className="h-4 w-4" />
+            </Button>
+          </CustomTooltip>
         </div>
         <div className="justify-self-center ">
           <Image src={logo} alt="logo" className="w-20 invert dark:invert-0" />
         </div>
         <div className="flex items-center gap-3  justify-self-end">
           <Link href="/write">
-            <Button size="icon" variant="default">
-              <FiEdit3 className="h-4 w-4" />
-            </Button>
+            <CustomTooltip label="Write">
+              <Button size="icon" variant="default">
+                <FiEdit3 className="h-4 w-4" />
+              </Button>
+            </CustomTooltip>{" "}
           </Link>
-          <Button
-            onClick={() =>
-              theme == "dark" ? setTheme("light") : setTheme("dark")
-            }
-            variant="muted"
-            size="icon"
-          >
-            <FiSun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <FiMoon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          </Button>
+          <CustomTooltip label={theme}>
+            <Button
+              onClick={() =>
+                theme == "dark" ? setTheme("light") : setTheme("dark")
+              }
+              variant="muted"
+              size="icon"
+            >
+              <FiSun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+              <FiMoon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            </Button>
+          </CustomTooltip>{" "}
           <Button size="icon" variant="outline">
             <FiMoreVertical className="h-4 w-4" />
           </Button>
