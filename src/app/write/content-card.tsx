@@ -6,6 +6,7 @@ import { FiArrowUpRight, FiPlus } from "react-icons/fi";
 export default function ContentCard() {
   return (
     <Card className="flex mt-4 flex-col gap-2 w-full rounded-2xl p-2">
+      {/* Chapter block*/}
       <div className="flex gap-2 justify-end">
         <ContentItem>
           <p>Chapter 1</p>
@@ -15,6 +16,7 @@ export default function ContentCard() {
           <FiPlus className="h-4 w-4" />
         </Button>
       </div>
+      {/* topic block*/}
       <div className="flex gap-2 justify-end">
         <ContentItem variant="ghost" size="topic">
           <p>Topic 1</p>
