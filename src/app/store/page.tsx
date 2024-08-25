@@ -3,6 +3,7 @@ import { FiFilter, FiGrid, FiSearch } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Dock from "../write/dock";
 import CustomTooltip from "@/components/ui/custom-tooltip";
+import BookContainer from "./books-container";
 
 export default function Store() {
   return (
@@ -25,33 +26,12 @@ export default function Store() {
         </CustomTooltip>{" "}
       </div>
       <section className="basis-5 w-auto">
-        {" "}
-        <div className="flex flex-col max-w-min bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg overflow-hidden">
-          Top Sellers
-          <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
-          </div>
-        </div>
-        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg overflow-hidden">
-          Top Sellers
-          <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-          </div>
-        </div>
-        <div className="flex flex-col bg-muted/30 p-4 m-6 border border-muted/70 rounded-lg overflow-hidden">
-          Top Sellers
-          <div className="flex  gap-4 justify-between">
-            <BookCard />
-            <BookCard />
-            <BookCard />
-            <BookCard />
-          </div>
-        </div>
+        <BookContainer />
+        <BookContainer />
+        <BookContainer />
+        <BookContainer />
       </section>
+
       <Dock />
     </main>
   );
