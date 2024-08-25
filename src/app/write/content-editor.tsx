@@ -32,6 +32,7 @@ export default function ContentEditor({ className }: { className?: string }) {
         </div>{" "}
         <div>
           <ContentCard />
+          <ContentCard />
         </div>
       </div>
     </div>
