@@ -3,7 +3,6 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
-
 const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -1,13 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
 export default function BookMeta({ className }: { className?: string }) {
   const [isCoverSet, setIsCoverSet] = useState<boolean>(false);
 
-  const [bookCover, setBookCover] = useState<string | undefined>("");
+  const [bookCover, setBookCover] = useState<string>("");
   const addCoverHandler = (e: FormEvent) => {
     e.preventDefault();
 
@@ -23,7 +24,7 @@ export default function BookMeta({ className }: { className?: string }) {
   return (
     <div className={`left-block  flex  ${className}`}>
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
-        <img className=" w-full" src={bookCover} alt="Book Cover Here" />
+        <Image className=" w-full" src={bookCover} alt="Book Cover Here" />
         {!isCoverSet && (
           <form
             onSubmit={addCoverHandler}

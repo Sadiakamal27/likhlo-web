@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ContentItem } from "./content-item";
-import { FiArrowUpRight, FiPlus } from "react-icons/fi";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function ContentCard() {
   return (

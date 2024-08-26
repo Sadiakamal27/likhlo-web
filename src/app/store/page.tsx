@@ -1,4 +1,3 @@
-import BookCard from "@/components/book-card";
 import { FiFilter, FiGrid, FiSearch } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Dock from "../write/dock";

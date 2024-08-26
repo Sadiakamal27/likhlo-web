@@ -1,5 +1,4 @@
 import BookCard from "@/components/book-card";
-import React from "react";
 
 export default function BookContainer() {
   return (
