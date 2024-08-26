@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const books = [
   {
     title: "Blink",
@@ -14,7 +12,7 @@ export default function BookCard() {
   return (
     <div className="flex py-3 ">
       <div className="h-75 w-48 cover bg-muted/40 rounded-lg overflow-hidden">
-        <Image src={books[0].coverImage} alt={books[0].title} />
+        <img src={books[0].coverImage} alt={books[0].title} />
       </div>
     </div>
   );
