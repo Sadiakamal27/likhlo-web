@@ -33,7 +33,6 @@ export default function BookEditor({ className }: { className?: string }) {
         </div>{" "}
         <div>
           <ContentCard />
-          <ContentCard />
         </div>
       </div>
     </div>
