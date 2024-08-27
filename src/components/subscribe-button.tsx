@@ -24,7 +24,7 @@ const SubscribeButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
               <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
               <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
             </span>
-            <span className="relative flex gap-4 text-white">
+            <span className="relative flex gap-4 text-white font-bold">
               <GiSpellBook className="w-6 h-6" />
               Subsribe for Updates
             </span>
