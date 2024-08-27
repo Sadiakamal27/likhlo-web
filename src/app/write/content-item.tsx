@@ -2,7 +2,7 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/utils";
-import { FiArrowUpRight, FiPlus } from "react-icons/fi";
+import { FiPlus } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 
 const buttonVariants = cva(

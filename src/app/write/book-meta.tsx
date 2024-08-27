@@ -1,11 +1,10 @@
 "use client";
 
-import SubscribeButton from "@/components/subscribe-button";
+import { SubscribeButton } from "@/components/subscribe-button";
 import { AvatarFallback, AvatarImage, Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { GhostInput } from "@/components/ui/ghost-input";
-import { Input } from "@/components/ui/input";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
@@ -26,7 +25,7 @@ export default function BookMeta({ className }: { className?: string }) {
   };
 
   return (
-    <div className={`left-block  flex flex-col  gap-4 ${className}`}>
+    <div className={`left-block  flex flex-col  max-w-72 gap-4 ${className}`}>
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
         <img className=" w-full" src={bookCover} alt="Book Cover Here" />
         {!isCoverSet && (
@@ -43,7 +42,7 @@ export default function BookMeta({ className }: { className?: string }) {
       </div>
 
       <div className="w-full flex flex-col gap-4">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 mt-4">
           <GhostInput
             className="border-0 text-3xl font-bold "
             placeholder="Book Title Here..."
@@ -59,14 +58,13 @@ export default function BookMeta({ className }: { className?: string }) {
               Ammar Qureshi
             </Button>
             <CustomTooltip label="Add Author">
-              <Button size="icon" variant="outline">
+              <Button size="icon" variant="muted">
                 <FiPlus className="w-4 h-4" />
               </Button>
             </CustomTooltip>
           </div>
+          <SubscribeButton>Hello</SubscribeButton>
         </div>
-
-        <SubscribeButton />
       </div>
     </div>
   );
