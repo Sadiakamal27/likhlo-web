@@ -1,8 +1,10 @@
 "use client";
 
 import SubscribeButton from "@/components/subscribe-button";
-import { Avatar } from "@/components/ui/avatar";
+import { AvatarFallback, AvatarImage, Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import CustomTooltip from "@/components/ui/custom-tooltip";
+import { GhostInput } from "@/components/ui/ghost-input";
 import { Input } from "@/components/ui/input";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
@@ -24,7 +26,7 @@ export default function BookMeta({ className }: { className?: string }) {
   };
 
   return (
-    <div className={`left-block  flex  ${className}`}>
+    <div className={`left-block  flex flex-col  gap-4 ${className}`}>
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
         <img className=" w-full" src={bookCover} alt="Book Cover Here" />
         {!isCoverSet && (
@@ -40,13 +42,27 @@ export default function BookMeta({ className }: { className?: string }) {
         )}
       </div>
 
-      <div className="w-full flex flex-col">
-        <div>
-          <Input placeholder="Book Title Here..." />
-          <div>
-            <Button>
-              <Avatar />
+      <div className="w-full flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
+          <GhostInput
+            className="border-0 text-3xl font-bold "
+            placeholder="Book Title Here..."
+          />
+          <div className="flex gap-2">
+            {" "}
+            {/*Author Button */}
+            <Button className="gap-2" variant="outline">
+              <Avatar className="h-full w-auto">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>AM</AvatarFallback>
+              </Avatar>
+              Ammar Qureshi
             </Button>
+            <CustomTooltip label="Add Author">
+              <Button size="icon" variant="outline">
+                <FiPlus className="w-4 h-4" />
+              </Button>
+            </CustomTooltip>
           </div>
         </div>
 

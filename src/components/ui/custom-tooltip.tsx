@@ -16,7 +16,7 @@ export default function CustomTooltip({
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
-        <TooltipContent>{label}</TooltipContent>
+        <TooltipContent sideOffset={3}>{label}</TooltipContent>
       </Tooltip>
     </TooltipProvider>
   );
