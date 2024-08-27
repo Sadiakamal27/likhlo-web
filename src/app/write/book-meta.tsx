@@ -44,12 +44,26 @@ export default function BookMeta({ className }: { className?: string }) {
       <div className="w-full flex flex-col gap-4">
         <div className="flex flex-col gap-4 mt-4">
           <GhostInput
-            className="border-0 text-3xl font-bold "
+            className=" text-3xl font-bold "
             placeholder="Book Title Here..."
           />
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {" "}
             {/*Author Button */}
+            <Button className="gap-2" variant="outline">
+              <Avatar className="h-full w-auto">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>AM</AvatarFallback>
+              </Avatar>
+              Qureshi
+            </Button>
+            <Button className="gap-2" variant="outline">
+              <Avatar className="h-full w-auto">
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>AM</AvatarFallback>
+              </Avatar>
+              Ammar Qureshi
+            </Button>
             <Button className="gap-2" variant="outline">
               <Avatar className="h-full w-auto">
                 <AvatarImage src="https://github.com/shadcn.png" />
