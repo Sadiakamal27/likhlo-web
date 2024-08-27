@@ -1,6 +1,7 @@
 "use client";
 
 import SubscribeButton from "@/components/subscribe-button";
+import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FormEvent, useState } from "react";
@@ -42,6 +43,11 @@ export default function BookMeta({ className }: { className?: string }) {
       <div className="w-full flex flex-col">
         <div>
           <Input placeholder="Book Title Here..." />
+          <div>
+            <Button>
+              <Avatar />
+            </Button>
+          </div>
         </div>
 
         <SubscribeButton />
