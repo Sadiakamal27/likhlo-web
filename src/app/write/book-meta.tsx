@@ -1,9 +1,9 @@
 "use client";
 
 import { SubscribeButton } from "@/components/subscribe-button";
-import { AvatarFallback, AvatarImage, Avatar } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import CustomTooltip from "@/components/ui/custom-tooltip";
+import { CustomTooltip } from "@/components/ui/custom-tooltip";
 import { GhostInput } from "@/components/ui/ghost-input";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
@@ -15,7 +15,6 @@ export default function BookMeta({ className }: { className?: string }) {
   const addCoverHandler = (e: FormEvent) => {
     e.preventDefault();
 
-    console.log("cover added");
     if (isCoverSet == false) {
       setBookCover(
         "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348218658i/873537.jpg",
