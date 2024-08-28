@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { ContentItem } from "./content-item";
+import { ContentItem } from "@/components/content-item";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function ContentCard() {
