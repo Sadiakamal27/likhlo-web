@@ -3,7 +3,7 @@
 import { SubscribeButton } from "@/components/subscribe-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { CustomTooltip } from "@/components/ui/custom-tooltip";
+import CustomTooltip from "@/components/ui/custom-tooltip";
 import { GhostInput } from "@/components/ui/ghost-input";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";

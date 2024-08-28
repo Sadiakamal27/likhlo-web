@@ -5,7 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ReactNode } from "react";
-export function CustomTooltip({
+export default function CustomTooltip({
   children,
   label,
 }: {
