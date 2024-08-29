@@ -1,7 +1,7 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   FiBook,
@@ -15,7 +15,15 @@ import {
 export default function Dock(): any {
   const { setTheme, theme } = useTheme();
   return (
-    <div className=" flex gap-8 border border-input p-4 rounded-xl fixed bottom-2 left-2/4 translate-x-[-50%] bg-background/30 backdrop-blur-md z-40 ">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      className=" flex gap-8 border border-input p-4 rounded-xl fixed bottom-2 left-2/4 translate-x-[-50%] bg-background/30 backdrop-blur-md z-40 "
+    >
       <Link href="/store">
         {" "}
         <Button size="icon" variant="muted">
@@ -41,6 +49,6 @@ export default function Dock(): any {
       <Button size="icon" variant="outline">
         <FiMoreVertical className="h-4 w-4" />
       </Button>
-    </div>
+    </motion.div>
   );
 }
