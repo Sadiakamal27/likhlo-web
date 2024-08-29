@@ -6,8 +6,8 @@ import BookContainer from "./books-container";
 
 export default function Store() {
   return (
-    <main className="bg-red-500 flex  flex-row max-sm:flex-col max-sm:items-center items-start  relative ">
-      <div className="px-4  basis-1/5 flex flex-col max-sm:flex-row    gap-4 bg-green-500 sticky top-24">
+    <main className=" flex  flex-row max-sm:flex-col max-sm:items-center items-start  relative ">
+      <div className="px-4  basis-1/5 flex flex-col max-sm:flex-row    gap-4  sticky top-24">
         <CustomTooltip label="Search">
           <Button size="icon" variant="secondary">
             <FiSearch className="h-4 w-4" />
