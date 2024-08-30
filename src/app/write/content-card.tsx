@@ -11,15 +11,11 @@ export default function ContentCard() {
         <FiArrowUpRight className="w-4 h-4" />
       </ContentItem>
       {/* topic block*/}
-      <ContentItem variant="ghost" size="topic">
+      <ContentItem variant="outline" size="topic">
         <p>Topic 1</p>
         <FiArrowUpRight className="w-4 h-4" />
       </ContentItem>
-      <ContentItem variant="ghost" size="topic">
-        <p>Topic 1</p>
-        <FiArrowUpRight className="w-4 h-4" />
-      </ContentItem>
-      <ContentItem variant="ghost" size="topic">
+      <ContentItem variant="outline" size="topic">
         <p>Topic 1</p>
         <FiArrowUpRight className="w-4 h-4" />
       </ContentItem>
