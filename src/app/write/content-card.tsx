@@ -15,7 +15,23 @@ export default function ContentCard() {
         <p>Topic 1</p>
         <FiArrowUpRight className="w-4 h-4" />
       </ContentItem>
+      <ContentItem variant="ghost" size="topic">
+        <p>Topic 1</p>
+        <FiArrowUpRight className="w-4 h-4" />
+      </ContentItem>
+      <ContentItem variant="ghost" size="topic">
+        <p>Topic 1</p>
+        <FiArrowUpRight className="w-4 h-4" />
+      </ContentItem>
       {/*subtopic block*/}
+      <ContentItem variant="ghost" size="subtopic">
+        <p>Topic 1</p>
+        <FiArrowUpRight className="w-4 h-4" />
+      </ContentItem>
+      <ContentItem variant="ghost" size="subtopic">
+        <p>Topic 1</p>
+        <FiArrowUpRight className="w-4 h-4" />
+      </ContentItem>
       <ContentItem variant="ghost" size="subtopic">
         <p>Topic 1</p>
         <FiArrowUpRight className="w-4 h-4" />

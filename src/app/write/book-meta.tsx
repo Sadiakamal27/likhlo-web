@@ -56,20 +56,6 @@ export default function BookMeta({ className }: { className?: string }) {
               </Avatar>
               Qureshi
             </Button>
-            <Button className="gap-2" variant="outline">
-              <Avatar className="h-full w-auto">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>AM</AvatarFallback>
-              </Avatar>
-              Ammar Qureshi
-            </Button>
-            <Button className="gap-2" variant="outline">
-              <Avatar className="h-full w-auto">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback>AM</AvatarFallback>
-              </Avatar>
-              Ammar Qureshi
-            </Button>
             <CustomTooltip label="Add Author">
               <Button size="icon" variant="muted">
                 <FiPlus className="w-4 h-4" />
