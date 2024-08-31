@@ -1,4 +1,4 @@
-type Book = {
+export type Book = {
   title: string;
   author: string[];
   content: {
@@ -12,7 +12,7 @@ type Book = {
   }[];
 };
 
-const books: Book[] = [
+export const books: Book[] = [
   {
     title: "Outlier",
     author: ["Ammar Qurshi"],

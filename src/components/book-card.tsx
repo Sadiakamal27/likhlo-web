@@ -1,3 +1,5 @@
+import { Book } from "@/app/data";
+
 const books = [
   {
     title: "Blink",
@@ -8,11 +10,11 @@ const books = [
   },
 ];
 
-export default function BookCard() {
+export default function BookCard({ data }) {
   return (
     <div className="flex py-3 ">
       <div className="h-75 w-48 cover bg-muted/40 rounded-lg overflow-hidden">
-        <img src={books[0].coverImage} alt={books[0].title} />
+        <img src={data.title} alt={data.title} />
       </div>
     </div>
   );
