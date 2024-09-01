@@ -26,9 +26,6 @@ export default function Store() {
       </div>
       <section className="basis-5 w-auto">
         <BookContainer />
-        <BookContainer />
-        <BookContainer />
-        <BookContainer />
       </section>
 
       <Dock />

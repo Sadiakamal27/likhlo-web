@@ -1,6 +1,7 @@
 export type Book = {
   title: string;
   author: string[];
+  cover: string;
   content: {
     chapterTitle: string;
     topics?: {
@@ -16,6 +17,8 @@ export const books: Book[] = [
   {
     title: "Outlier",
     author: ["Ammar Qurshi"],
+    cover:
+      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
     content: [
       {
         chapterTitle: "Hockey players",
@@ -35,6 +38,8 @@ export const books: Book[] = [
   {
     title: "Blink",
     author: ["malcolm gladwell"],
+    cover:
+      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
     content: [
       {
         chapterTitle: "How to think",
@@ -54,6 +59,8 @@ export const books: Book[] = [
   {
     title: "Blink",
     author: ["malcolm gladwell"],
+    cover:
+      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
     content: [
       {
         chapterTitle: "How to think",
