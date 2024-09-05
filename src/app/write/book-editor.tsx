@@ -2,6 +2,7 @@ import { FiEdit2, FiPlus, FiTrash } from "react-icons/fi";
 import ContentCard from "./content-card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { books } from "../data";
 
 export default function BookEditor({ className }: { className?: string }) {
   return (
@@ -32,6 +33,10 @@ export default function BookEditor({ className }: { className?: string }) {
           </div>
         </div>{" "}
         <div>
+          {books[0].content.map((chapter: any) => (
+            <div>{chapter.chapterTitle} </div>
+          ))}
+
           <ContentCard />
         </div>
       </div>
