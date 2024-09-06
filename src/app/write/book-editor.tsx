@@ -33,11 +33,9 @@ export default function BookEditor({ className }: { className?: string }) {
           </div>
         </div>{" "}
         <div>
-          {books[0].content.map((chapter: any) => (
-            <div>{chapter.chapterTitle} </div>
+          {books[0].content.map((chapter: any, index: number) => (
+            <ContentCard key={index} />
           ))}
-
-          <ContentCard />
         </div>
       </div>
     </div>

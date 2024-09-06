@@ -5,13 +5,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import { GhostInput } from "@/components/ui/ghost-input";
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
 
 export default function BookMeta({ className }: { className?: string }) {
   const [isCoverSet, setIsCoverSet] = useState<boolean>(false);
 
-  const [bookCover, setBookCover] = useState<string | undefined>("");
+  const [bookCover, setBookCover] = useState("");
   const addCoverHandler = (e: FormEvent) => {
     e.preventDefault();
 
@@ -26,7 +27,7 @@ export default function BookMeta({ className }: { className?: string }) {
   return (
     <div className={`left-block  flex flex-col  max-w-72 gap-4 ${className}`}>
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
-        <img className=" w-full" src={bookCover} alt="Book Cover Here" />
+        <Image className=" w-full" src={bookCover} alt="Book Cover Here" />
         {!isCoverSet && (
           <form
             onSubmit={addCoverHandler}
