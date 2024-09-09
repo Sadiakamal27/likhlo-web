@@ -36,7 +36,12 @@ export default function Navbar(): any {
           </CustomTooltip>
         </div>
         <div className="justify-self-center ">
-          <Image src={logo} alt="logo" className="w-20 invert dark:invert-0" />
+          <Image
+            src={logo}
+            alt="logo"
+            className="w-20 invert dark:invert-0"
+            fill={true}
+          />
         </div>
         <div className="flex items-center gap-3  justify-self-end">
           <Link href="/write">

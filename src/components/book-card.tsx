@@ -4,7 +4,7 @@ export default function BookCard({ data }: { data: Book }) {
   return (
     <div className="flex py-3 ">
       <div className="h-75 w-48 cover bg-muted/40 rounded-lg overflow-hidden">
-        <Image src={data.cover} alt={data.title} />
+        <Image src={data.cover} alt={data.title} width={200} height={300} />
       </div>
     </div>
   );

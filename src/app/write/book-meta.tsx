@@ -27,7 +27,13 @@ export default function BookMeta({ className }: { className?: string }) {
   return (
     <div className={`left-block  flex flex-col  max-w-72 gap-4 ${className}`}>
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
-        <Image className=" w-full" src={bookCover} alt="Book Cover Here" />
+        <Image
+          className=" w-full"
+          src={bookCover}
+          alt="Book Cover Here"
+          width={500}
+          height={700}
+        />
         {!isCoverSet && (
           <form
             onSubmit={addCoverHandler}
