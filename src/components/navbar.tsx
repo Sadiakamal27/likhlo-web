@@ -40,7 +40,8 @@ export default function Navbar(): any {
             src={logo}
             alt="logo"
             className="w-20 invert dark:invert-0"
-            fill={true}
+            width={50}
+            height={50}
           />
         </div>
         <div className="flex items-center gap-3  justify-self-end">
