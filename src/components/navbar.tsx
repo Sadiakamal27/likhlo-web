@@ -22,7 +22,6 @@ export default function Navbar(): any {
       <div className="grid grid-cols-3">
         <div className="flex items-center gap-3">
           <Link href="/store">
-            {" "}
             <CustomTooltip label="Store">
               <Button size="icon" variant="muted">
                 <FiShoppingBag className="h-4 w-4" />
