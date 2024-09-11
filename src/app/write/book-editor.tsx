@@ -1,5 +1,5 @@
 import { FiEdit2, FiPlus, FiTrash } from "react-icons/fi";
-import ContentCard from "./content-card";
+import ContentCard from "../../components/content-card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { books } from "../data";
