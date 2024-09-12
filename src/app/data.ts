@@ -21,6 +21,19 @@ export const books: Book[] = [
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
     content: [
       {
+        chapterTitle: "Cricket players",
+        topics: [
+          {
+            topicTitle: "Do what comes to your mind",
+            subtopic: [
+              {
+                subtopicTitle: "Why do this?",
+              },
+            ],
+          },
+        ],
+      },
+      {
         chapterTitle: "Hockey players",
         topics: [
           {
