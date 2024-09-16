@@ -16,6 +16,11 @@ export default function ContentCard() {
         <p>Topic 1</p>
         <FiArrowUpRight className="w-4 h-4" />
       </ContentItem>
+         chapter.topics[0].subtopic.map(topic=> (
+      <ContentItem variant="outline" size="topic">
+        <p>Topic 1</p>
+        <FiArrowUpRight className="w-4 h-4" />
+      </ContentItem>
  
         ))
       )))}
