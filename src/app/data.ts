@@ -49,8 +49,8 @@ export const books: Book[] = [
     ],
   },
   {
-    title: "Outlier",
-    author: ["Ammar Qurshi"],
+    title: "Data Analytics",
+    author: ["Usama Kamran "],
     cover:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
     content: [
