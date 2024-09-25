@@ -1,4 +1,5 @@
 import React from "react";
+import ReadingNav from "./reading-nav";
 
 export default function PageView() {
   return (
