@@ -8,7 +8,7 @@ I would love to think it like this that we are changing the book publishing indu
 
 ### How does it work?
 
-[1] Create an account
-[2] Go to write page
-[3] start writing by adding a content block
-[4] when finished, publish the book and vallah!
+1. Create an account
+2. Go to write page
+3. start writing by adding a content block
+4. when finished, publish the book and vallah!
