@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import ReadingNav from "./reading-nav";
-
 export default function PageView() {
   const [isWriting, setIsWriting] = useState(false);
   return (
