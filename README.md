@@ -1,3 +1,5 @@
+![Likhlo logo](./src/assets/likhlo-logo.svg)
+
 ## Likhlo - New way to Publish Books
 
 Traditionally books were written in a way that to change them you have to stop the whole press and then re publish all the books again and name them as a new edition. This would take people, time, money and a lot of effort to just add a chapter at the end.
