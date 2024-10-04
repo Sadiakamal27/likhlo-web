@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { ContentItem } from "@/components/content-item";
 import { FiArrowUpRight } from "react-icons/fi";
-import { books } from "@/app/data";
+import { Book } from "@/app/data";
 
-export default function ContentCardList() {
+export default function ContentCardList(book: Book) {
   return (
-    <>
-      {books[0].chapters.map((chapter) => {
+    <div>
+      {book.chapters?.map((chapter) => {
         <Card className="flex bg-transparent mt-4 flex-col gap-2 w-full rounded-2xl p-2">
           <ContentItem size="chapter">
             <p>{chapter.chapterTitle}</p>
@@ -28,6 +28,6 @@ export default function ContentCardList() {
           ))}
         </Card>;
       })}
-    </>
+    </div>
   );
 }

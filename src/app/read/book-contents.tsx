@@ -1,8 +1,7 @@
 import { FiEdit2, FiPlus, FiTrash } from "react-icons/fi";
-import ContentCard from "../../components/content-card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { books } from "../data";
+import ContentCardList from "@/components/content-card-list";
 
 export default function BookContents({ className }: { className?: string }) {
   return (
@@ -33,9 +32,7 @@ export default function BookContents({ className }: { className?: string }) {
           </div>
         </div>{" "}
         <div>
-          {books[0].content.map((chapter: any, index: number) => (
-            <ContentCard key={index} />
-          ))}
+          <ContentCardList />
         </div>
       </div>
     </div>

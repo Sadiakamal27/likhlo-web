@@ -1,7 +1,7 @@
 import { FiEdit2, FiPlus, FiTrash } from "react-icons/fi";
+import { books } from "@/app/data";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { books } from "../data";
 import ContentCardList from "@/components/content-card-list";
 
 export default function BookEditor({ className }: { className?: string }) {
@@ -32,9 +32,7 @@ export default function BookEditor({ className }: { className?: string }) {
             </Button>
           </div>
         </div>{" "}
-        <div>
-          <ContentCardList />
-        </div>
+        <ContentCardList book={books[0]} />
       </div>
     </div>
   );
