@@ -24,6 +24,9 @@ export const books: Book[] = [
         chapterTitle: "Cricket players",
         topics: [
           {
+            topicTitle: "Why cricket is good?",
+          },
+          {
             topicTitle: "Do what comes to your mind",
             subtopic: [
               {
@@ -39,6 +42,9 @@ export const books: Book[] = [
           {
             topicTitle: "Do what comes to your mind",
             subtopic: [
+              {
+                subtopicTitle: "How to do this thing",
+              },
               {
                 subtopicTitle: "Why do this?",
               },
