@@ -2,7 +2,7 @@ export type Book = {
   title: string;
   author: string[];
   cover: string;
-  content: {
+  chapters: {
     chapterTitle: string;
     topics?: {
       topicTitle: string | undefined;
@@ -19,7 +19,7 @@ export const books: Book[] = [
     author: ["Ammar Qurshi"],
     cover:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
-    content: [
+    chapters: [
       {
         chapterTitle: "Cricket players",
         topics: [
@@ -59,7 +59,7 @@ export const books: Book[] = [
     author: ["Usama Kamran "],
     cover:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
-    content: [
+    chapters: [
       {
         chapterTitle: "Cricket players",
         topics: [
@@ -93,7 +93,7 @@ export const books: Book[] = [
     author: ["malcolm gladwell"],
     cover:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
-    content: [
+    chapters: [
       {
         chapterTitle: "How to think",
         topics: [
@@ -114,7 +114,7 @@ export const books: Book[] = [
     author: ["malcolm gladwell"],
     cover:
       "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653065920i/59892260.jpg",
-    content: [
+    chapters: [
       {
         chapterTitle: "How to think",
         topics: [

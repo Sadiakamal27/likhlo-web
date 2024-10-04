@@ -3,11 +3,11 @@ import { ContentItem } from "@/components/content-item";
 import { FiArrowUpRight } from "react-icons/fi";
 import { books } from "@/app/data";
 
-export default function ContentCard() {
+export default function ContentCardList() {
   return (
-    <Card className="flex bg-transparent mt-4 flex-col gap-2 w-full rounded-2xl p-2">
-      {books[0].content.map((chapter) => (
-        <>
+    <>
+      {books[0].chapters.map((chapter) => {
+        <Card className="flex bg-transparent mt-4 flex-col gap-2 w-full rounded-2xl p-2">
           <ContentItem size="chapter">
             <p>{chapter.chapterTitle}</p>
             <FiArrowUpRight className="w-4 h-4" />
@@ -26,8 +26,8 @@ export default function ContentCard() {
               ))}
             </>
           ))}
-        </>
-      ))}
-    </Card>
+        </Card>;
+      })}
+    </>
   );
 }
