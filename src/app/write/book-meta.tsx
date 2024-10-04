@@ -29,7 +29,7 @@ export default function BookMeta({ className }: { className?: string }) {
       <div className="h-[27rem] relative w-72 cover bg-muted/40 rounded-lg overflow-hidden">
         <Image
           className=" w-full"
-          src={bookCover}
+          src={bookCover ? bookCover : "/ "}
           alt="Book Cover Here"
           width={500}
           height={700}
