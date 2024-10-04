@@ -6,7 +6,7 @@ export type Book = {
     chapterTitle: string;
     topics?: {
       topicTitle: string | undefined;
-      subtopic?: {
+      subtopics?: {
         subtopicTitle: string | undefined;
       }[];
     }[];
@@ -28,7 +28,7 @@ export const books: Book[] = [
           },
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "Why do this?",
               },
@@ -41,7 +41,7 @@ export const books: Book[] = [
         topics: [
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "How to do this thing",
               },
@@ -65,7 +65,7 @@ export const books: Book[] = [
         topics: [
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "Why do this?",
               },
@@ -78,7 +78,7 @@ export const books: Book[] = [
         topics: [
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "Why do this?",
               },
@@ -99,7 +99,7 @@ export const books: Book[] = [
         topics: [
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "Why do this?",
               },
@@ -120,7 +120,7 @@ export const books: Book[] = [
         topics: [
           {
             topicTitle: "Do what comes to your mind",
-            subtopic: [
+            subtopics: [
               {
                 subtopicTitle: "Why do this?",
               },

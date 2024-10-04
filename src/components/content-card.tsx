@@ -12,15 +12,15 @@ export default function ContentCard() {
             <p>{chapter.chapterTitle}</p>
             <FiArrowUpRight className="w-4 h-4" />
           </ContentItem>
-          {chapter.topics.map((topic) => (
+          {chapter.topics?.map((topic) => (
             <>
               <ContentItem variant="secondary" size="topic">
                 <p>{topic.topicTitle}</p>
                 <FiArrowUpRight className="w-4 h-4" />
               </ContentItem>
-              {topic.subtopic.map((topic) => (
+              {topic.subtopics?.map((subtopic) => (
                 <ContentItem variant="ghost" size="subtopic">
-                  <p>{topic.subtopicTitle}</p>
+                  <p>{subtopic.subtopicTitle}</p>
                   <FiArrowUpRight className="w-4 h-4" />
                 </ContentItem>
               ))}
