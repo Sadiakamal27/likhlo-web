@@ -3,8 +3,6 @@
 import { SubscribeButton } from "@/components/subscribe-button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import CustomTooltip from "@/components/ui/custom-tooltip";
-import { GhostInput } from "@/components/ui/ghost-input";
 import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { FiPlus } from "react-icons/fi";
@@ -49,10 +47,7 @@ export default function BookInfo({ className }: { className?: string }) {
 
       <div className="w-full flex flex-col gap-4">
         <div className="flex flex-col gap-4 mt-4">
-          <GhostInput
-            className=" text-3xl font-bold "
-            placeholder="Book Title Here..."
-          />
+          <h2 className=" text-3xl font-bold ">Blink</h2>
           <div className="flex gap-2 flex-wrap">
             {" "}
             {/*Author Button */}
@@ -63,11 +58,6 @@ export default function BookInfo({ className }: { className?: string }) {
               </Avatar>
               Qureshi
             </Button>
-            <CustomTooltip label="Add Author">
-              <Button size="icon" variant="muted">
-                <FiPlus className="w-4 h-4" />
-              </Button>
-            </CustomTooltip>
           </div>
           <SubscribeButton>Hello</SubscribeButton>
         </div>
