@@ -24,6 +24,14 @@ export const books: Book[] = [
         chapterTitle: "Cricket players",
         topics: [
           {
+            topicTitle: "Cricket is a shit sport",
+            subtopics: [
+              {
+                subtopicTitle: "Heres why:",
+              },
+            ],
+          },
+          {
             topicTitle: "Why cricket is good?",
           },
           {
