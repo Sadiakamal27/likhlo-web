@@ -13,7 +13,6 @@ export default function BookContent({ className }: { className?: string }) {
         Vivamus a bibendum nisl. Sed et consequat ex, sit amet scelerisque nisi.
         Donec ut congue sapien.Vivamus a bibendum nisl. Sed et consequat ex, sit
         amet scelerisque nisi. Donec ut congue sapien.Vivamus a bibendum nisl.
-        Sed et consequat ex, sit amet scelerisque nisi. Donec ut congue sapien.
       </div>
       <Separator className="my-6" />
       <div className="text-foreground">
