@@ -6,8 +6,8 @@ import BookContainer from "./books-container";
 
 export default function Store() {
   return (
-    <main className=" flex  flex-row max-sm:flex-col max-sm:items-center items-start  relative ">
-      <div className="px-4  basis-1/5 flex flex-col max-sm:flex-row    gap-4  sticky top-24">
+    <main className="grid bg-red-500 ">
+      <div className="col-span-1 bg-green-500  flex flex-col">
         <CustomTooltip label="Search">
           <Button size="icon" variant="secondary">
             <FiSearch className="h-4 w-4" />
@@ -24,11 +24,9 @@ export default function Store() {
           </Button>
         </CustomTooltip>{" "}
       </div>
-      <section className="basis-5 w-auto">
+      <section className="col-span-11">
         <BookContainer />
       </section>
-
-      <Dock />
     </main>
   );
 }
