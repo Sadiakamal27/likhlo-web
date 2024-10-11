@@ -29,13 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    body {
-      background-image: url("../assets/mesh-gradient-light.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
   }
-
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -61,11 +55,6 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    body {
-      background-image: url("../assets/mesh-gradient-1.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
   }
 }
 

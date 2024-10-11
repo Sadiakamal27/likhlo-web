@@ -6,8 +6,8 @@ import BookContainer from "./books-container";
 
 export default function Store() {
   return (
-    <main className="grid bg-red-500 ">
-      <div className="col-span-1 bg-green-500  flex flex-col">
+    <main className="grid bg-red-500 grid-cols-2 ">
+      <div className=" col-span-1 bg-green-500  flex flex-col">
         <CustomTooltip label="Search">
           <Button size="icon" variant="secondary">
             <FiSearch className="h-4 w-4" />
@@ -24,7 +24,7 @@ export default function Store() {
           </Button>
         </CustomTooltip>{" "}
       </div>
-      <section className="col-span-11">
+      <section className="col-span-2 bg-cyan-500 ">
         <BookContainer />
       </section>
     </main>

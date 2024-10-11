@@ -24,6 +24,7 @@ export default function BookEditor({ className }: { className?: string }) {
             <Button size="icon" variant="ghost">
               <FiPlus className="w-4 h-4" />
             </Button>
+
             <Button size="icon" variant="ghost">
               <FiEdit2 className="w-4 h-4" />
             </Button>
