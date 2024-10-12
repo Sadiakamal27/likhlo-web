@@ -28,7 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Image
-            className="fixed cover  w-full h-full "
+            className="fixed cover  object-cover w-full h-full "
             src={bgImage}
             width={400}
             height={200}
