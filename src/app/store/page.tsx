@@ -1,6 +1,5 @@
 import { FiFilter, FiGrid, FiSearch } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
-import Dock from "@/components/dock";
 import CustomTooltip from "@/components/ui/custom-tooltip";
 import BookContainer from "./books-container";
 
