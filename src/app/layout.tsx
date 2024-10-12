@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import bgImage from "@/assets/mesh-gradient-1.png";
+import bgImageDark from "@/assets/mesh-gradient-1.png";
+import bgImageLight from "@/assets/mesh-gradient-light.png";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider, useTheme } from "next-themes";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 const quicksand = Quicksand({ subsets: ["latin"] });
@@ -27,14 +28,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           <Image
             className="fixed cover  object-cover w-full h-full "
-            src={bgImage}
+            src={bgImageDark}
             width={400}
             height={200}
             alt="background-mesh"
           />
-          <Navbar />
           {children}
         </ThemeProvider>
       </body>
