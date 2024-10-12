@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     "Likhlo is a modern book publishing platform innovating how people write and read books",
 };
 
+// TODO: -  MAKE BACKGROUND IMAGE DYNAMIC FOR DIFFERENT THEMES
+
 export default function RootLayout({
   children,
 }: Readonly<{
