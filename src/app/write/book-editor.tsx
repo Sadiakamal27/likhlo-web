@@ -9,7 +9,6 @@ export default function BookEditor({ className }: { className?: string }) {
     <div className={className}>
       <div className="text-foreground  flex flex-col gap-4 ">
         <h2 className="p-0 text-xl font-bold ">Description</h2>
-        {books[1].title}
         <textarea
           style={{ resize: "none" }}
           className="bg-transparent max-h-32 h-auto placeholder:text-foreground/30 w-full h-auto outline-none "
