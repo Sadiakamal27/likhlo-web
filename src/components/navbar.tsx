@@ -52,6 +52,9 @@ export default function Navbar(): any {
               </Button>
             </CustomTooltip>{" "}
           </Link>
+          <Button size="smIcon" variant="secondary">
+            <FiRepeat className="" />
+          </Button>{" "}
           <Button size="sm" variant="secondary">
             <FiRepeat className="mr-2" />
             REFRESH
