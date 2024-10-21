@@ -9,6 +9,7 @@ import {
   FiMoreVertical,
   FiShoppingBag,
   FiBook,
+  FiRepeat,
 } from "react-icons/fi";
 import { useTheme } from "next-themes";
 import Link from "next/link";
@@ -51,6 +52,10 @@ export default function Navbar(): any {
               </Button>
             </CustomTooltip>{" "}
           </Link>
+          <Button size="sm" variant="secondary">
+            <FiRepeat className="mr-2" />
+            REFRESH
+          </Button>
           <CustomTooltip label={theme}>
             <Button
               onClick={() =>
