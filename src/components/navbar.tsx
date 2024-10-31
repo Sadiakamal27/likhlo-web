@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "@/assets/likhlo-logo.svg";
+import logo from "@/assets/likhlo-black.svg";
 import { Button } from "./ui/button";
 import {
   FiEdit3,
